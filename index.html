@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+		<title>Hafid Riyadi</title>
+		<meta
+			name="description"
+			content="Mahasiswa dan seorang fullstack web developer yang sedang belajar library javascript ReactJS dengan framework Next.js dan utility-first CSS framework Tailwindcss"
+		/>
+		<meta property="og:url" content="https://hafidr.vercel.app" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Hafid Riyadi" />
+		<meta
+			property="og:description"
+			content="Mahasiswa dan seorang fullstack web developer yang sedang belajar library javascript ReactJS dengan framework Next.js dan utility-first CSS framework Tailwindcss"
+		/>
+		<meta property="og:image" content="https://hafidr.vercel.app/img/profile-picture.webp" />
+
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<script src="https://kit.fontawesome.com/03495f1bbd.js" crossorigin="anonymous"></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+		<script src="js/typewritter.js" defer></script>
+		<script src="js/localization.js" defer></script>
+		<script src="js/script.js" defer></script>
+	</head>
+	<body class="bg-primary">
+		<div class="preloader">
+			<div class="jelly"></div>
+		</div>
+		<nav class="navbar">
+			<ul class="navbar__items">
+				<li>
+					<a href="#home" class="navbar__items-link active" data-link="home" data-i18n-key="MENU_HOME">Home</a>
+				</li>
+				<li>
+					<a href="#about" class="navbar__items-link" data-link="about" data-i18n-key="MENU_ABOUT">Tentang</a>
+				</li>
+				<li>
+					<a href="#experiences" class="navbar__items-link" data-link="experiences" data-i18n-key="MENU_EXPERIENCES"
+						>Portofolio</a
+					>
+				</li>
+				<li>
+					<a href="#educations" class="navbar__items-link" data-link="educations" data-i18n-key="MENU_EDUCATIONS">Pendidikan</a>
+				</li>
+				<li>
+					<a href="#achivments" class="navbar__items-link" data-link="achivments" data-i18n-key="MENU_ACHIVMENTS">Prestasi</a>
+				</li>
+				<li>
+					<a href="#contact" class="navbar__items-link" data-link="contact" data-i18n-key="MENU_CONTACT">Kontak</a>
+				</li>
+			</ul>
+			<div class="navbar__action">
+				<button class="btn btn__primary" style="padding: 0.375rem" data-translate-btn>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="btn__icon-lg">
+						<path
+							fill-rule="evenodd"
+							d="M9 2.25a.75.75 0 01.75.75v1.506a49.38 49.38 0 015.343.371.75.75 0 11-.186 1.489c-.66-.083-1.323-.151-1.99-.206a18.67 18.67 0 01-2.969 6.323c.317.384.65.753.998 1.107a.75.75 0 11-1.07 1.052A18.902 18.902 0 019 13.687a18.823 18.823 0 01-5.656 4.482.75.75 0 11-.688-1.333 17.323 17.323 0 005.396-4.353A18.72 18.72 0 015.89 8.598a.75.75 0 011.388-.568A17.21 17.21 0 009 11.224a17.17 17.17 0 002.391-5.165 48.038 48.038 0 00-8.298.307.75.75 0 01-.186-1.489 49.159 49.159 0 015.343-.371V3A.75.75 0 019 2.25zM15.75 9a.75.75 0 01.68.433l5.25 11.25a.75.75 0 01-1.36.634l-1.198-2.567h-6.744l-1.198 2.567a.75.75 0 01-1.36-.634l5.25-11.25A.75.75 0 0115.75 9zm-2.672 8.25h5.344l-2.672-5.726-2.672 5.726z"
+							clip-rule="evenodd"
+						></path>
+					</svg>
+				</button>
+			</div>
+		</nav>
+		<section id="home" class="bg-secondary">
+			<div class="profile">
+				<div class="profile-wrapper h-screen py-20">
+					<div id="home-section-title" class="profile__info" style="transform: translate(-999px)">
+						<div class="profile__info-badge" data-i18n-key="HOME_LABEL_HI">👋 Hai!</div>
+						<h1 class="profile__info-intro">
+							<span data-i18n-key="HOME_LABEL_ME">Saya</span><br /><span class="text-accent">Hafid Riyadi</span>
+						</h1>
+						<p class="profile__info-about" data-i18n-key="HOME_INTRODUCTION">
+							Mahasiswa dan seorang fullstack web developer yang sedang belajar library javascript
+							<a href="https://reactjs.org" target="_blank" rel="noopener noreferrer" class="profile__info-skill-link"
+								>ReactJS</a
+							>
+							dengan framework
+							<a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" class="profile__info-skill-link"
+								>Next.js</a
+							>
+							dan utility-first CSS framework
+							<a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" class="profile__info-skill-link"
+								>Tailwindcss</a
+							>
+						</p>
+						<div class="profile__info-socials">
+							<a href="https://www.facebook.com/hafid.riyadi.39" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-facebook-square fa-2x text-white"></i>
+							</a>
+							<a href="https://instagram.com/hafidr_" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-instagram fa-2x text-white"></i>
+							</a>
+							<a href="https://github.com/hafidr" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-github fa-2x text-white"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/hafid-riyadi-4060b9152/" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-linkedin fa-2x text-white"></i>
+							</a>
+						</div>
+					</div>
+					<div id="home-section-image" class="profile__image" style="transform: translate(999px)">
+						<img src="img/profile-picture.webp" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="bg-polkadot" style="position: absolute; bottom: 0; left: 0; height: 10rem; width: 16rem; z-index: 0"></div>
+			<div class="bg-polkadot" style="position: absolute; top: 0; right: 0; height: 10rem; width: 16rem; z-index: 0"></div>
+		</section>
+		<section id="about" class="container">
+			<div id="about-section-title" class="section-title">
+				<h1 class="section-title__content" data-title="Tentang" data-i18n-key="MENU_ABOUT" style="transform: scale(0)">Tentang</h1>
+			</div>
+			<div class="about">
+				<div id="about-section-description" class="about__description" style="transform: translateX(-999px)">
+					<p data-i18n-key="ABOUT_INTRO">
+						Sebagai seorang fullstack web developer, saya menguasai beberapa bahasa pemrograman native dan juga framework untuk
+						frontend maupun backend, seperti HTML, CSS, Javascript, PHP, Codeigniter, Laravel, ReactJS, Next.js, Bootstrap, dan
+						TailwindCSS
+					</p>
+				</div>
+				<div id="about-section-skills" class="about__skills">
+					<div class="about__skills-wrapper">
+						<img src="img/html5-logo.png" alt="HTML 5" class="logo-html skill" style="transform: scale(0)" />
+						<img src="img/css3-logo.png" alt="CSS 3" class="logo-css skill" style="transform: scale(0)" />
+						<img src="img/new-php-logo.svg" alt="PHP" class="logo-php skill" style="transform: scale(0)" />
+						<img src="img/js-logo.png" alt="Javascript" class="logo-js skill" style="transform: scale(0)" />
+						<img src="img/nodejs-new-pantone-black.svg" alt="NodeJS" class="logo-node-js skill" style="transform: scale(0)" />
+						<img src="img/reactjs-logo.png" alt="ReactJS" class="logo-reactjs skill" style="transform: scale(0)" />
+						<img src="img/nextjs-logo.png" alt="Nextjs" class="logo-nextjs skill" style="transform: scale(0)" />
+						<img src="img/codeigniter-logo.png" alt="Codeigniter" class="logo-codeigniter skill" style="transform: scale(0)" />
+						<img src="img/laravel-logo.png" alt="Laravel" class="logo-laravel skill" style="transform: scale(0)" />
+						<img src="img/bootstrap-logo.svg" alt="Bootstrap" class="logo-bootstrap skill" style="transform: scale(0)" />
+						<img src="img/tailwindcss-mark.svg" alt="Tailwindcss" class="logo-tailwind skill" style="transform: scale(0)" />
+						<img src="img/logo-mysql-170x115.png" alt="MySql" class="logo-mysql skill" style="transform: scale(0)" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="experiences" class="container">
+			<div id="experiences-section-title" class="section-title">
+				<h1 class="section-title__content" data-title="Portofolio" data-i18n-key="MENU_EXPERIENCES" style="transform: scale(0)">
+					Portofolio
+				</h1>
+			</div>
+			<div id="experiences-section-projects" class="experiences">
+				<div class="experiences__card" style="transform: scale(0)">
+					<div class="experiences__card-image">
+						<img src="img/portofolio/leole.PNG" alt="Leole" />
+					</div>
+					<div class="experiences__card-body">
+						<div class="experiences__description">
+							<h1 class="experiences__description-title" data-i18n-key="EXPERIENCES_LABEL_LEOLE">Leole</h1>
+							<p class="experiences__description-detail" data-i18n-key="EXPERIENCES_DESCRIPTION_LEOLE">
+								Toko online untuk oleh-oleh pada hotel di Bali
+							</p>
+						</div>
+						<div class="experiences__stacks">
+							<div class="badge badge__red">Laravel</div>
+							<div class="badge badge__blue">TailwindCSS</div>
+							<div class="badge badge__white">Next.js</div>
+						</div>
+					</div>
+				</div>
+				<div class="experiences__card" style="transform: scale(0)">
+					<div class="experiences__card-image">
+						<img src="img/portofolio/ppdb-kosgoro.png" alt="PPDB Kosgoro" />
+					</div>
+					<div class="experiences__card-body">
+						<div class="experiences__description">
+							<h1 class="experiences__description-title" data-i18n-key="EXPERIENCES_LABEL_PPDB">PPDB Kosgoro</h1>
+							<p class="experiences__description-detail" data-i18n-key="EXPERIENCES_DESCRIPTION_PPDB">
+								Sistem penerimaan peserta didik baru untuk SMP, SMA, dan SMK Kosgoro Bogor
+							</p>
+						</div>
+						<div class="experiences__stacks">
+							<div class="badge badge__red">Laravel</div>
+							<div class="badge badge__indigo">Bootstrap</div>
+						</div>
+					</div>
+				</div>
+				<div class="experiences__card" style="transform: scale(0)">
+					<div class="experiences__card-image">
+						<img src="img/portofolio/simaster.png" alt="Simaster" />
+					</div>
+					<div class="experiences__card-body">
+						<div class="experiences__description">
+							<h1 class="experiences__description-title" data-i18n-key="EXPERIENCES_LABEL_SIMASTER">Simaster</h1>
+							<p class="experiences__description-detail" data-i18n-key="EXPERIENCES_DESCRIPTION_SIMASTER">
+								Sistem keuangan tata usaha untuk SMP, SMA, dan SMK Kosgoro Bogor
+							</p>
+						</div>
+						<div class="experiences__stacks">
+							<div class="badge badge__red">Laravel</div>
+							<div class="badge badge__blue">TailwindCSS</div>
+							<div class="badge badge__white">Next.js</div>
+						</div>
+					</div>
+				</div>
+				<div class="experiences__card" style="transform: scale(0)">
+					<div class="experiences__card-image">
+						<img src="img/portofolio/cilube.png" alt="cilube" />
+					</div>
+					<div class="experiences__card-body">
+						<div class="experiences__description">
+							<h1 class="experiences__description-title" data-i18n-key="EXPERIENCES_LABEL_CILUBE">Cilube</h1>
+							<p class="experiences__description-detail" data-i18n-key="EXPERIENCES_DESCRIPTION_CILUBE">
+								Sistem penjadwalan dan monitoring mesin untuk pabrik Mondelez International
+							</p>
+						</div>
+						<div class="experiences__stacks">
+							<div class="badge badge__red">Laravel</div>
+							<div class="badge badge__indigo">Bootstrap</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="educations" class="container">
+			<div id="educations-section-title" class="section-title">
+				<h1 class="section-title__content" data-title="Pendidikan" data-i18n-key="MENU_EDUCATIONS" style="transform: scale(0)">
+					Pendidikan
+				</h1>
+			</div>
+			<div id="educations-section-histories" class="educations">
+				<div class="educations__card" style="transform: scale(0)">
+					<div class="educations__card-body">
+						<p class="educations__description-year" data-i18n-key="EDUCATIONS_UNIVERSITY_DATE">2020 - Sekarang</p>
+						<h1 class="educations__description-title" data-i18n-key="EDUCATIONS_UNIVERSITY_NAME">
+							Universitas Ibn Khladun Bogor
+						</h1>
+						<p class="educations__description-detail" data-i18n-key="EDUCATIONS_UNIVERSITY_MAJOR">Teknik informatika</p>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="education-logo">
+						<path
+							d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z"
+						/>
+						<path
+							d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z"
+						/>
+						<path
+							d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z"
+						/>
+					</svg>
+				</div>
+				<div class="educations__card" style="transform: scale(0)">
+					<div class="educations__card-body">
+						<p class="educations__description-year" data-i18n-key="EDUCATIONS_HIGHSCHOOL_DATE">2017 - 2020</p>
+						<h1 class="educations__description-title" data-i18n-key="EDUCATIONS_HIGHSCHOOL_NAME">SMKN 1 Ciomas</h1>
+						<p class="educations__description-detail" data-i18n-key="EDUCATIONS_HIGHSCHOOL_MAJOR">Rekayasa Perangkat Lunak</p>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="education-logo">
+						<path
+							d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z"
+						/>
+						<path
+							d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z"
+						/>
+						<path
+							d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z"
+						/>
+					</svg>
+				</div>
+				<div class="educations__card" style="transform: scale(0)">
+					<div class="educations__card-body">
+						<p class="educations__description-year" data-i18n-key="EDUCATIONS_JUNIOR_DATE">2014 - 2017</p>
+						<h1 class="educations__description-title" data-i18n-key="EDUCATIONS_JUNIOR_NAME">SMPN 2 Dramaga</h1>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="education-logo">
+						<path
+							d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z"
+						/>
+						<path
+							d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z"
+						/>
+						<path
+							d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z"
+						/>
+					</svg>
+				</div>
+				<div class="educations__card" style="transform: scale(0)">
+					<div class="educations__card-body">
+						<p class="educations__description-year" data-i18n-key="EDUCATIONS_ELEMENTARY_DATE">2008 - 2014</p>
+						<h1 class="educations__description-title" data-i18n-key="EDUCATIONS_ELEMENTARY_NAME">SDN Sindang Barang 2</h1>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="education-logo">
+						<path
+							d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z"
+						/>
+						<path
+							d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z"
+						/>
+						<path
+							d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z"
+						/>
+					</svg>
+				</div>
+			</div>
+		</section>
+		<section id="achivments" class="container">
+			<div id="achivments-section-title" class="section-title">
+				<h1 class="section-title__content" data-title="Prestasi" data-i18n-key="MENU_ACHIVMENTS" style="transform: scale(0)">
+					Prestasi
+				</h1>
+			</div>
+			<div id="achivments-section-lists" class="achivments">
+				<div class="achivments__card" style="transform: scale(0)">
+					<div class="achivments__card-body">
+						<p class="achivments__description-year" data-i18n-key="ACHIVMENTS_KKSI_YEAR">2019</p>
+						<h1 class="achivments__description-title" data-i18n-key="ACHIVMENTS_KKSI_NAME">Kamp Kreatif SMK Indonesia</h1>
+						<p class="achivments__description-rank" data-i18n-key="ACHIVMENTS_KKSI_RANK">Juara 2</p>
+						<p class="achivments__description-detail" data-i18n-key="ACHIVMENTS_KKSI_CATEGORY">Teknologi Smart School</p>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="achivment-logo">
+						<path
+							fill-rule="evenodd"
+							d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 00-.584.859 6.753 6.753 0 006.138 5.6 6.73 6.73 0 002.743 1.346A6.707 6.707 0 019.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 00-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 00.75-.75 2.25 2.25 0 00-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 01-1.112-3.173 6.73 6.73 0 002.743-1.347 6.753 6.753 0 006.139-5.6.75.75 0 00-.585-.858 47.077 47.077 0 00-3.07-.543V2.62a.75.75 0 00-.658-.744 49.22 49.22 0 00-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 00-.657.744zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 013.16 5.337a45.6 45.6 0 012.006-.343v.256zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 01-2.863 3.207 6.72 6.72 0 00.857-3.294z"
+							clip-rule="evenodd"
+						/>
+					</svg>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="container">
+			<div id="contact-section-title" class="section-title">
+				<h1 class="section-title__content" data-title="Kontak" data-i18n-key="MENU_CONTACT" style="transform: scale(0)">Kontak</h1>
+			</div>
+			<div class="contact">
+				<form onsubmit="return false" id="contact-section-form" class="contact__form" style="transform: translateX(-999px)">
+					<div class="contact__form-group">
+						<label for="nama" class="form__label" data-i18n-key="CONTACT_FORM_LABEL_NAME">Nama</label>
+						<input type="text" name="nama" id="nama" class="form__input" required />
+					</div>
+					<div class="contact__form-group">
+						<label for="email" class="form__label" data-i18n-key="CONTACT_FORM_LABEL_EMAIL">Email</label>
+						<input type="email" name="email" id="email" class="form__input" required />
+					</div>
+					<div class="contact__form-group">
+						<label for="pesan" class="form__label" data-i18n-key="CONTACT_FORM_LABEL_MESSAGE">Pesan</label>
+						<textarea rows="5" name="pesan" id="pesan" class="form__input" required></textarea>
+					</div>
+					<div class="contact__form-group">
+						<button type="submit" class="btn btn__primary">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="btn__icon"
+								style="margin-right: 0.25rem"
+							>
+								<path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+								<path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+							</svg>
+							<span data-i18n-key="CONTACT_FORM_LABEL_SEND">Kirim</span>
+						</button>
+					</div>
+				</form>
+				<div id="contact-section-info" class="contact__info" style="transform: translateX(999px)">
+					<div class="contact__items">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="contact__items-icon">
+							<path
+								fill-rule="evenodd"
+								d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+						<span>+62 895-xxxx-xxxx</span>
+					</div>
+					<div class="contact__items">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="contact__items-icon">
+							<path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+							<path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+						</svg>
+						<span>hafid.xxxx@xxxx.xxx</span>
+					</div>
+					<div class="contact__items">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="contact__items-icon">
+							<path
+								fill-rule="evenodd"
+								d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+						<span>Indonesia</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__container">
+				<p class="footer__copyright">
+					<span class="text-accent" style="font-weight: 900; margin-right: 4px">Hafid Riyadi</span> &copy; 2022
+				</p>
+			</div>
+		</footer>
+		<div class="overlay-btn__wrapper">
+			<a
+				href="#home"
+				id="scroll-top-btn"
+				class="btn btn__outline-primary"
+				style="height: 3.5rem; width: 3.5rem; padding: 0; transition: all ease-in 0.15s; transform: scale(0)"
+				onclick="setActiveMenu('home')"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="btn__icon">
+					<path
+						fill-rule="evenodd"
+						d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z"
+						clip-rule="evenodd"
+					/>
+				</svg>
+			</a>
+			<button id="menu-toggle-btn" class="btn btn__primary btn__rounded-full" style="height: 3.5rem; width: 3.5rem; padding: 0">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="btn__icon"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				</svg>
+			</button>
+		</div>
+	</body>
+</html>
