@@ -51,7 +51,8 @@ function animationContextListener(event) {
 			{ ACTION: "PAUSE", PAYLOAD: 150 },
 			{ ACTION: "WRITE", PAYLOAD: "\n\nSo I beg you", SPEED: 50 },
 			{ ACTION: "PAUSE", PAYLOAD: 500 },
-			{ ACTION: "WRITE", PAYLOAD: "\nTolong jangan menyerang. . .🙏", SPEED: 50 },
+			{ ACTION: "WRITE", PAYLOAD: "\nTolong jangan menyerang. . .", SPEED: 50 },
+			{ ACTION: "WRITE", PAYLOAD: "🙏", SPEED: 0 },
 			{ ACTION: "PAUSE", PAYLOAD: 150 },
 			{ ACTION: "WRITE", PAYLOAD: "\n\nBest regards,", SPEED: 50 },
 			{ ACTION: "PAUSE", PAYLOAD: 150 },
@@ -148,11 +149,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	var locale = localStorage.getItem("locale") ?? "id";
 	document.querySelector("[data-translate-btn]").addEventListener("click", function () {
-		var current = locale == "id" ? "en" : "id";
-		locale = current;
-		localStorage.setItem("locale", current);
+		locale = locale == "id" ? "en" : "id";
+		localStorage.setItem("locale", locale);
 
-		useLocalization(I18N_ITEMS, current);
+		useLocalization(I18N_ITEMS, locale);
 	});
 
 	useLocalization(I18N_ITEMS, locale);
@@ -288,16 +288,16 @@ document.addEventListener("DOMContentLoaded", function () {
 		var img = new Image();
 		img.src = item;
 	});
-	// console.clear();
-	// console.log(`
-	// ██╗  ██╗ █████╗  ██████╗██╗  ██╗███████╗██████╗          ██╗ ██████╗ ███╗   ██╗    ███╗   ███╗███████╗██╗  ██╗
-	// ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗         ██║██╔════╝ ████╗  ██║    ████╗ ████║██╔════╝██║ ██╔╝
-	// ███████║███████║██║     █████╔╝ █████╗  ██████╔╝         ██║██║  ███╗██╔██╗ ██║    ██╔████╔██║███████╗█████╔╝
-	// ██╔══██║██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗    ██   ██║██║   ██║██║╚██╗██║    ██║╚██╔╝██║╚════██║██╔═██╗
-	// ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║    ╚█████╔╝╚██████╔╝██║ ╚████║    ██║ ╚═╝ ██║███████║██║  ██╗
-	// ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝     ╚════╝  ╚═════╝ ╚═╝  ╚═══╝    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝
+	console.clear();
+	console.log(`
+	██╗  ██╗ █████╗  ██████╗██╗  ██╗███████╗██████╗          ██╗ ██████╗ ███╗   ██╗    ███╗   ███╗███████╗██╗  ██╗
+	██║  ██║██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗         ██║██╔════╝ ████╗  ██║    ████╗ ████║██╔════╝██║ ██╔╝
+	███████║███████║██║     █████╔╝ █████╗  ██████╔╝         ██║██║  ███╗██╔██╗ ██║    ██╔████╔██║███████╗█████╔╝
+	██╔══██║██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗    ██   ██║██║   ██║██║╚██╗██║    ██║╚██╔╝██║╚════██║██╔═██╗
+	██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║    ╚█████╔╝╚██████╔╝██║ ╚████║    ██║ ╚═╝ ██║███████║██║  ██╗
+	╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝     ╚════╝  ╚═════╝ ╚═╝  ╚═══╝    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝
 
-	// `);
+	`);
 });
 
 document.querySelectorAll(".navbar__items-link").forEach(function (items) {

@@ -374,6 +374,10 @@ textarea {
 	transform: translateX(0);
 }
 
+.navbar__logo > img {
+	width: 3rem;
+}
+
 .navbar__items {
 	display: flex;
 	flex-direction: column;

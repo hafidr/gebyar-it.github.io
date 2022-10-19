@@ -5,6 +5,11 @@ var id = {
 	MENU_EDUCATIONS: "Pendidikan",
 	MENU_ACHIVMENTS: "Prestasi",
 	MENU_CONTACT: "Kontak",
+	SECTION_ABOUT: "Tentang",
+	SECTION_EXPERIENCES: "Portofolio",
+	SECTION_EDUCATIONS: "Pendidikan",
+	SECTION_ACHIVMENTS: "Prestasi",
+	SECTION_CONTACT: "Kontak",
 	HOME_LABEL_HI: "👋 Hai!",
 	HOME_LABEL_ME: "Saya",
 	HOME_INTRODUCTION: `Mahasiswa dan seorang fullstack web developer yang sedang belajar library javascript
@@ -41,7 +46,7 @@ var id = {
 	EDUCATIONS_ELEMENTARY_NAME: "SDN Sindang Barang 2",
 	ACHIVMENTS_KKSI_YEAR: "2019",
 	ACHIVMENTS_KKSI_NAME: "Kamp Kreatif SMK Indonesia",
-	ACHIVMENTS_KKSI_RANK: "juara 2",
+	ACHIVMENTS_KKSI_RANK: "Juara 2",
 	ACHIVMENTS_KKSI_CATEGORY: "Teknologi Smart School",
 	CONTACT_FORM_LABEL_NAME: "Nama",
 	CONTACT_FORM_LABEL_EMAIL: "Email",
@@ -56,6 +61,12 @@ var en = {
 	MENU_EDUCATIONS: "Educations",
 	MENU_ACHIVMENTS: "Achivments",
 	MENU_CONTACT: "Contact",
+	SECTION_HOME: "Home",
+	SECTION_ABOUT: "About",
+	SECTION_EXPERIENCES: "Portfolio",
+	SECTION_EDUCATIONS: "Educations",
+	SECTION_ACHIVMENTS: "Achivments",
+	SECTION_CONTACT: "Contact",
 	HOME_LABEL_HI: "👋 Hi!",
 	HOME_LABEL_ME: "I'm",
 	HOME_INTRODUCTION: `College student &amp; fullstack web developer who's currently learning javascript library
@@ -108,6 +119,10 @@ var i18n = {
 function useLocalization(items, locale) {
 	items.forEach((item) => {
 		var key = item.dataset.i18nKey;
+		if (item.dataset.title) {
+			item.dataset.title = i18n[locale][key];
+		}
+
 		document.querySelector(`[data-i18n-key='${key}']`).innerHTML = i18n[locale][key];
 	});
 }
