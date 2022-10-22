@@ -34,7 +34,7 @@ var id = {
 	EXPERIENCES_DESCRIPTION_SIMASTER: "Sistem keuangan tata usaha untuk SMP, SMA, dan SMK Kosgoro Bogor",
 	EXPERIENCES_LABEL_CILUBE: "CILUBE",
 	EXPERIENCES_DESCRIPTION_CILUBE: "Sistem penjadwalan dan monitoring mesin untuk pabrik Mondelez International",
-	EDUCATIONS_UNIVERSITY_DATE: "2020 - Now",
+	EDUCATIONS_UNIVERSITY_DATE: "2020 - Sekarang",
 	EDUCATIONS_UNIVERSITY_NAME: "Universitas Ibn Khaldun Bogor",
 	EDUCATIONS_UNIVERSITY_MAJOR: "Teknik Informatika",
 	EDUCATIONS_HIGHSCHOOL_DATE: "2017 - 2020",
