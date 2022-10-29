@@ -52,6 +52,7 @@ var id = {
 	CONTACT_FORM_LABEL_EMAIL: "Email",
 	CONTACT_FORM_LABEL_MESSAGE: "Pesan",
 	CONTACT_FORM_LABEL_SEND: "Kirim",
+	SUCCESS_SENDING_MESSAGE: "Berhasil mengirim pesan!",
 };
 
 var en = {
@@ -109,12 +110,19 @@ var en = {
 	CONTACT_FORM_LABEL_EMAIL: "Email",
 	CONTACT_FORM_LABEL_MESSAGE: "Message",
 	CONTACT_FORM_LABEL_SEND: "Send",
+	SUCCESS_SENDING_MESSAGE: "Successfully sent message!",
 };
 
 var i18n = {
 	id: id,
 	en: en,
 };
+
+function translate(key) {
+	var lang = localStorage.getItem("locale") ?? "id";
+	var value = i18n[lang][key];
+	return value;
+}
 
 function useLocalization(items, locale) {
 	items.forEach((item) => {

@@ -110,7 +110,7 @@ function formSubmitHandler(event) {
 
 	Toast.fire({
 		icon: "success",
-		title: "Pesan Berhasi Dikirim!",
+		title: translate("SUCCESS_SENDING_MESSAGE"),
 	});
 	return false;
 }
